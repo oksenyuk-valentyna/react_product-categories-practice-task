@@ -15,8 +15,8 @@ import usersFromServer from './api/users';
 
 export const App: React.FC = () => {
   const [selectedUserId, setSelectedUserId] = useState(1);
-  // const products = visibleProducts.filter(product => product.id === selectedUserId);
   const [query, setQuery] = useState('');
+  // const products = visibleProducts.filter(product => product.id === selectedUserId);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
